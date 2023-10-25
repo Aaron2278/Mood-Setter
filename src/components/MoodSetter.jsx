@@ -12,7 +12,7 @@ function MoodSetter() {
         // Clear the message after 3 seconds
         const timer = setTimeout(() => {
             setMessage('');
-        }, 10000);
+        }, 5000);
 
         return () => {
             clearTimeout(timer); // Cleanup timer to avoid any potential issues
@@ -42,6 +42,6 @@ function MoodSetter() {
             <button onClick={resetButton}>Reset Button</button>
         </div>
     );
-}
+} 
 
 export default MoodSetter;
